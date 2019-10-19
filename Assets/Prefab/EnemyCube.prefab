@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 6336150308351019589}
   - component: {fileID: 227585391468498208}
   - component: {fileID: 8955727822573832050}
+  - component: {fileID: 6473898970219706355}
   m_Layer: 0
   m_Name: EnemyCube
   m_TagString: Enemy
@@ -226,7 +227,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6336150308351019591}
   serializedVersion: 2
-  m_Mass: 0.02
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.005
   m_UseGravity: 0
@@ -260,9 +261,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb00a6b756447f4e9ea4ea2b9f3871d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
   Explosion: {fileID: 7166906480766140187, guid: 038dfb16fda73eb41b3ec912e2380740,
     type: 3}
   Particles: {fileID: 664986970119677166, guid: aebb39dff99293541bb69fd8924cd87e,
     type: 3}
   hitPoint: 20
+--- !u!114 &6473898970219706355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6336150308351019591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
