@@ -9,9 +9,9 @@ public class DebugMoverWithGrabMyCustom : MonoBehaviour
 
     [SerializeField]
     Transform Head = null;
-    public const float Angle = 1.5f;
+    public const float Angle = 1f;
     public const float DashSpeed = 5f;
-    public const float SlowSpeed = 2f;
+    public const float SlowSpeed = 1.5f;
     // public const float JumpPower = 50f;
 
     void Start()
@@ -29,7 +29,7 @@ public class DebugMoverWithGrabMyCustom : MonoBehaviour
     {
         get
         {
-            return IsPressTrigger ? DashSpeed : IsPressGrip ? SlowSpeed : 2f;
+            return IsPressTrigger ? DashSpeed : IsPressGrip ? SlowSpeed : 1.5f;
         }
     }
 
