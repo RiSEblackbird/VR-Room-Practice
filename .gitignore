@@ -38,5 +38,5 @@ sysinfo.txt
 # Add scripts below after generation myself
 /Assets/*
 !/Assets/Scenes
-!/Assets/Script
+!/Assets/Scripts
 !/Assets/Prefab
