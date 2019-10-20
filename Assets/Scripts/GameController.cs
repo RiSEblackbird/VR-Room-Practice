@@ -16,13 +16,6 @@ public class GameController : MonoBehaviour
         int count = GameObject.FindGameObjectsWithTag ("Enemy").Length;
         scoreLabel.text = count.ToString ();
 
-        if (count == 0) {
-            // オブジェクトをアクティブにする
-            winnerLabelObject.SetActive(true);
-            Reticle.SetActive(false);
-        }
-
-
         if (OVRInput.Get(OVRInput.Button.Four))
         {
             // 現在のシーン番号を取得
@@ -31,6 +24,13 @@ public class GameController : MonoBehaviour
             // 現在のシーンを再読み込みする
             SceneManager.LoadScene(sceneIndex);
         }
+
+        if (count == 0) {
+            // オブジェクトをアクティブにする
+            winnerLabelObject.SetActive(true);
+            Reticle.SetActive(false);
+        }
+        
     }
 
     public void OnRetry ()
